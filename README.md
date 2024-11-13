@@ -31,15 +31,15 @@ Update=1000
 [mExportVars]
 Measure=Plugin
 Plugin=ExportVars.dll
-SourceFile="C:\Path\To\Your\Source.ini"
-DestinationFile="C:\Path\To\Your\Destination.ini"
-OnCompleteAction=[!ActivateConfig "illustro\Main"]
+SourceFile="C:\Path\To\Your\Source.inc"
+DestinationFile="C:\Path\To\Your\Destination.inc"
+OnCompleteAction=[!Log "Variables Export Successfully"]
 ```
 
 ### Parameters:
 
-- `SourceFile`: The full path to the source `.ini` file from which variables will be copied.
-- `DestinationFile`: The full path to the destination `.ini` file where variables will be copied to.
+- `SourceFile`: The full path to the source `.inc` file from which variables will be copied.
+- `DestinationFile`: The full path to the destination `.inc` file where variables will be copied to.
 - `OnCompleteAction`: The action to be executed once the variable export is complete. For example, you can activate a Rainmeter config or execute any other Rainmeter command.
 
 ### LeftMouseUpAction:
